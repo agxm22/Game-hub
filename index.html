@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>Games Hub 🎀</title>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;700;900&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    min-height: 100vh;
+    background: linear-gradient(145deg, #FFD6E7, #FFB3D1);
+    font-family: 'Fredoka One', cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    position: relative;
+    overflow-x: hidden;
+  }
+  .deco {
+    position: absolute;
+    pointer-events: none;
+    font-size: 1.8rem;
+    animation: float 7s ease-in-out infinite;
+    opacity: 0.5;
+    z-index: 0;
+  }
+  @keyframes float {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-20px) rotate(8deg); }
+  }
+  .container {
+    position: relative;
+    z-index: 2;
+    max-width: 900px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(12px);
+    border-radius: 60px;
+    padding: 40px 30px;
+    box-shadow: 0 20px 40px rgba(255, 77, 148, 0.3), 0 0 0 4px #FF4D94, 0 0 0 8px #FFB3D1;
+    text-align: center;
+  }
+  h1 {
+    font-size: 2.8rem;
+    color: #FF4D94;
+    text-shadow: 3px 3px 0 white;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+  }
+  .sub {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.4rem;
+    color: #c2547a;
+    margin-bottom: 40px;
+    background: rgba(255,255,240,0.7);
+    display: inline-block;
+    padding: 5px 20px;
+    border-radius: 40px;
+  }
+  .games-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 35px;
+    margin: 30px 0 20px;
+  }
+  .game-card {
+    background: white;
+    border-radius: 48px;
+    width: 260px;
+    padding: 25px 15px 30px;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    border: 2px solid #FFB3D1;
+    box-shadow: 0 12px 20px rgba(0,0,0,0.1);
+  }
+  .game-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 25px 30px rgba(255,77,148,0.3);
+    border-color: #FF4D94;
+  }
+  .game-icon {
+    font-size: 4.5rem;
+    margin-bottom: 15px;
+  }
+  .game-title {
+    font-size: 1.8rem;
+    color: #FF4D94;
+    margin-bottom: 10px;
+  }
+  .game-desc {
+    font-family: 'Nunito', sans-serif;
+    font-size: 0.9rem;
+    color: #c2547a;
+    padding: 0 10px;
+  }
+  .heart-divider {
+    margin: 30px 0 15px;
+    font-size: 1.5rem;
+    letter-spacing: 8px;
+    color: #FF85B3;
+  }
+  .relax-message {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.8rem;
+    color: #FF4D94;
+    background: rgba(255,255,255,0.7);
+    display: inline-block;
+    padding: 8px 25px;
+    border-radius: 60px;
+    margin: 15px 0 10px;
+    border: 2px solid #FFB3D1;
+    backdrop-filter: blur(4px);
+    animation: gentlePulse 2s infinite;
+  }
+  @keyframes gentlePulse {
+    0%, 100% { transform: scale(1); opacity: 0.9; }
+    50% { transform: scale(1.03); opacity: 1; }
+  }
+  .footer-note {
+    font-family: 'Nunito', sans-serif;
+    font-size: 0.8rem;
+    color: #c2547a;
+    background: rgba(255,255,255,0.6);
+    display: inline-block;
+    padding: 6px 18px;
+    border-radius: 30px;
+    margin-top: 15px;
+  }
+  @media (max-width: 650px) {
+    .container { padding: 25px 20px; }
+    h1 { font-size: 2rem; }
+    .sub { font-size: 1.1rem; }
+    .game-card { width: 220px; padding: 18px 10px 22px; }
+    .game-title { font-size: 1.4rem; }
+    .game-icon { font-size: 3rem; }
+    .relax-message { font-size: 1.3rem; padding: 5px 18px; }
+  }
+</style>
+</head>
+<body>
+  <!-- floating decorations -->
+  <div class="deco" style="top: 8%; left: 5%; animation-delay: 0s;">🌸</div>
+  <div class="deco" style="top: 15%; right: 8%; animation-delay: 1s;">🎀</div>
+  <div class="deco" style="bottom: 12%; left: 3%; animation-delay: 2s;">⭐</div>
+  <div class="deco" style="bottom: 20%; right: 5%; animation-delay: 0.5s;">💗</div>
+  <div class="deco" style="top: 40%; left: 2%; animation-delay: 1.5s;">✨</div>
+  <div class="deco" style="top: 70%; right: 10%; animation-delay: 2.5s;">🐱</div>
+
+  <div class="container">
+    <h1>🎀 HELLO KITTY<br>GAMES HUB 🎀</h1>
+    <div class="sub">✨ choose your adventure ✨</div>
+
+    <div class="games-grid">
+      <!-- Flappy Kitty Game Link -->
+      <a href="flappy.html" class="game-card">
+        <div class="game-icon">🐱🎈</div>
+        <div class="game-title">Flappy Kitty</div>
+        <div class="game-desc">Tap to fly • Avoid pink pipes • Collect hearts</div>
+      </a>
+
+      <!-- Kitty Runner Game Link (Mario style) -->
+      <a href="runner.html" class="game-card">
+        <div class="game-icon">🐱🏃‍♀️</div>
+        <div class="game-title">Kitty Runner</div>
+        <div class="game-desc">Jump & run • Dodge enemies • Collect hearts</div>
+      </a>
+    </div>
+
+    <div class="heart-divider">💗 🎀 💗</div>
+    
+    <!-- Added "relax bacha" message -->
+    <div class="relax-message">🌸 relax bacha 🌸</div>
+    
+    <div class="footer-note">Tap any game to start.</div>
+  </div>
+</body>
+</html>
